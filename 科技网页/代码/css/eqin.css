@@ -1,0 +1,198 @@
+body{
+    padding-top: 80px;
+}
+.hpic img{
+    width: 100%;
+    height: 500px;
+}
+.eqbx .eq1{
+    padding-top: 170px;
+}
+.eqbx .eq1 .name{
+    letter-spacing: 0.5rem;
+    font-size: 24px;
+    margin-bottom: 90px;
+}
+.eqbx .eq1 .cont{
+    font-size: 18px;
+    margin-bottom: 50px;
+    letter-spacing: 0.1em;
+}
+.eqbx .eq1 .swtbox .swtm{
+    position: relative;
+    width: 172px;
+    line-height: 2.8em;
+    text-align: center;
+    border: 1px solid #a9adb5;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: 0.7s;
+}
+.eqbx .eq1 .swtbox .swtm:last-child{
+    margin-right: 0;
+}
+.eqbx .eq1 .swtbox .swtm:hover{
+    color: #ffffff;
+}
+.eqbx .eq1 .swtbox .swtm::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+    background: #517ed9;
+}
+.eqbx .eq1 .swtbox .swtm:hover:after{
+    transform: scaleY(1);
+    transform-origin: top;
+}
+.eqbx .eq1 .swtbox .swtm .pic{
+    position: absolute;
+    top: 50%;
+    left: 17px;
+    width: 12px;
+    transform: translateY(-50%);
+    z-index: 3;
+}
+.eqbx .eq1 .swtbox .swtm .pic img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    width: 100%;
+    transition: 0.7s;
+}
+.eqbx .eq1 .swtbox .swtm .stex{
+    position: relative;
+    z-index: 2;
+}
+.eqbx .eq2{
+    background-color: #e4e9ef;
+    padding-top: 120px;
+    margin-top: 120px;
+}
+.eqbx .eq2 .eq2bx .titnem{
+    position: relative;
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: 0.2em;
+}
+.eqbx .eq2 .eq2bx .titnem::after{
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    border-left: 1px solid #8f99a6;
+    border-bottom: 1px solid #8f99a6;
+    transform: rotate(-45deg);
+    bottom: -40px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+}
+.eqbx .eq2 .eq2bx .e2box{
+    margin-top: 120px;
+    flex-wrap: wrap;
+}
+.eqbx .eq2 .eq2bx .e2box .e2top{
+    width: 100%;
+    margin-bottom: 37px;
+}
+.eqbx .eq2 .eq2bx .e2box .e2top .pic2{
+    width: 100%;
+    height: 278px;
+}
+.eqbx .eq2 .eq2bx .e2box .e2top .pic2 .pic{
+    height: 100%;
+    width: 49.5%;
+    cursor: pointer;
+}
+.eqbx .eq2 .eq2bx .e2box .e2top .pic2 .pic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.eqbx .eq2 .eq2bx .e2box .text{
+    background-color: #ffffff;
+    padding: 25px;
+}
+.eqbx .eq2 .eq2bx .e2box .text .name{
+    color: #666666;
+    font-size: 18px;
+    letter-spacing: 0.2em;
+}
+.eqbx .eq2 .eq2bx .e2box .text .lin{
+    background-color: #666666;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 35px;
+    height: 2px;
+}
+.eqbx .eq2 .eq2bx .e2box .text .cont{
+    font-size: 18px;
+    letter-spacing: 0.2em;
+}
+.eqbx .eq2 .eq2bx .e2box .e2itm{
+    width: 48%;
+    margin-bottom: 37px;
+}
+.eqbx .eq2 .eq2bx .e2box .e2itm .pic{
+    width: 100%;
+    height: 278px;
+    cursor: pointer;
+}
+.eqbx .eq2 .eq2bx .e2box .pic{
+    overflow: hidden;
+}
+.eqbx .eq2 .eq2bx .e2box .pic img{
+    transition: 0.5s;
+}
+.eqbx .eq2 .eq2bx .e2box .pic:hover img{
+    transform: scale(1.1);
+}
+.eqbx .eq2 .eq2bx .e2box .e2itm .pic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.eqbx .eq2 .eq2bx .swits{
+    font-size: 18px;
+    text-align: center;
+    padding-bottom: 120px;
+    padding-top: 75px;
+}
+.eqbx .eq2 .eq2bx .swits .prive{
+    cursor: pointer;
+    line-height: 45px;
+    padding: 0 10px;
+    background-color: #ffffff;
+    margin-right: 10px;
+    transition: 0.5s;
+}
+.eqbx .eq2 .eq2bx .swits .sit{
+    cursor: pointer;
+    line-height: 45px;
+    width: 45px;
+    background-color: #ffffff;
+    margin-right: 10px;
+    transition: 0.5s;
+}
+.eqbx .eq2 .eq2bx .swits .prive:hover,
+.eqbx .eq2 .eq2bx .swits .sit.active,
+.eqbx .eq2 .eq2bx .swits .next:hover,
+.eqbx .eq2 .eq2bx .swits .sit:hover{
+    background-color: #517ed9;
+    color: #ffffff;
+}
+.eqbx .eq2 .eq2bx .swits .next{
+    cursor: pointer;
+    line-height: 45px;
+    padding: 0 10px;
+    background-color: #ffffff;
+    transition: 0.5s;
+}

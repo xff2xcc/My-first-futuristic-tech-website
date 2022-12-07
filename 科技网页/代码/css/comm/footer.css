@@ -1,0 +1,76 @@
+.footer{
+    position: relative;
+    background-color: #ffffff;
+    z-index: 3;
+    padding-top: 80px;
+    transition: 0.5s;
+}
+
+.footer .flogo{
+    width: 270px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.footer .flogo img{
+    width: 100%;
+}
+.footer .title{
+    font-size: 18px;
+    color: #666666;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    letter-spacing: 0.2em;
+    font-weight: bold;
+}
+.footer .ftbox{
+    text-align: center;
+    font-size: 18px;
+    color: #666666;
+    line-height: 2.2;
+    width: 654px;
+    border-bottom: 1px solid #d1d1d1;
+    margin: 0 auto;
+    padding-bottom: 25px;
+}
+.footer .butto{
+    cursor: pointer;
+    background-color: #7794B4;
+    line-height: 60px;
+    width: 280px;
+    margin: 0 auto;
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+    margin-top: 40px;
+    margin-bottom: 29px;
+    position: relative;
+    letter-spacing: 0.1em;
+}
+.footer .down{
+    background-color: #eeeeee;
+    text-align: center;
+    font-size: 14px;
+    line-height: 88px;
+    color: #666666;
+}
+.footer .butto::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+    background: #517ed9;
+}
+.footer .butto:hover:after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.footer .butto div{
+    position: relative;
+    z-index: 2;
+}

@@ -1,0 +1,290 @@
+.header{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 6;
+}
+.header .indhe{
+    display: flex;
+    padding: 0 46px;
+    padding-top: 37px;
+}
+
+*{
+    padding: 0px;   
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+body{
+    overflow-x: hidden;
+    position: relative;
+}  
+img{
+    display: block;
+}
+.flex{
+    display: flex;
+}
+.flex-s{
+    display: flex;
+    justify-content: space-between;
+}
+.flex-x{
+    display: flex;
+    justify-content: center;
+}
+.flex-y{
+    display: flex;
+    align-items: center;
+}
+
+.black{
+    position: absolute;
+    background-color: rgb(0,0,0,0.2);
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    z-index: 2;
+}
+
+.headrpic{
+    width: 100%;
+    height: 100vh;
+}
+.bapic{
+    width: 100%;
+    height: 100vh;
+}
+
+
+.bacbox{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.bacbox .black{
+    background-color: #1a2e57;
+    opacity: 0.35;
+}
+.bacbox img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.inbod{
+    position: relative;
+    z-index: 2;
+}
+.inbod .inbd1{
+    position: relative;
+}
+.inbod .inbd1 .runce{
+    writing-mode: vertical-lr;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    font-size: 30px;
+    color: #ffffff;
+    letter-spacing: 0.3em;
+    word-break: keep-all;
+}
+.inbod .inbd1 .butsbx{
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    transform: translateX(-50%);
+    font-size: 18px;
+    width: 100%;
+    justify-content: center;
+}
+.inbod .inbd1 .butsbx .buitm{
+    margin-right: 90px;
+    position: relative;
+    cursor: pointer;
+    color: #ffffff;
+    padding-bottom: 10px;
+    letter-spacing: 0.5em;
+}
+.inbod .inbd1 .butsbx .buitm::after{
+    content: " ";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffffff;
+    width: 15px;
+    height: 1px;
+    transition: 0.3s;
+}
+.inbod .inbd1 .butsbx .buitm:hover:after{
+    width: 100%;
+}
+.inbod .inbd1 .butsbx a:last-child .buitm{
+    margin-right: 0;
+}
+.inbod .inbd1 .getdow{
+    position: absolute;
+    right: 50px;
+    bottom: 40px;
+    cursor: pointer;
+}
+.inbod .inbd1 .getdow .txt{
+    writing-mode: vertical-lr;
+    margin: 0 auto;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 18px;
+    letter-spacing: 0.2em;
+}
+.inbod .inbd1 .getdow .pic{
+    width: 10px;
+    margin-left: auto;
+}
+.inbod .inbd1 .getdow .pic img{
+    width: 100%;
+}
+.inbod .inbd2{
+    position: relative;
+    background-color: #1a2e57;
+}
+.inbod .inbd2 .bac{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.inbod .inbd2 .in2lf{
+    width: 50%;
+    position: relative;
+    transition: 0.8s;
+    height: 100%;
+    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+}
+
+.inbod .inbd2 .in2rh{
+    width: 50%;
+    position: relative;
+}
+.inbod .inbd2 .in2rh .black{
+    background-color: rgb(0,0,0,0.55);
+}
+.inbod .inbd2 .in2rh .jianb{
+    opacity: 0.55;
+    background-image: linear-gradient(rgb(0,0,0,0.9), rgb(0,0,0,0));
+    background-color: initial;
+}
+.inbod .inbd2 .more{
+    position: absolute;
+    bottom: 80px;
+    left: 0%;
+    transform: translateX(-50%);
+    background-color: #ffffff;
+    padding: 10px 30px;
+    z-index: 3;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.inbod .inbd2 .more:hover{
+    transform: translate(-50% , -10px);
+}
+.inbod .inbd2 .more .mtex{
+    font-size: 18px;
+    letter-spacing: 0.5rem;
+}
+.inbod .inbd2 .more .mtex a{
+    color: black;
+}
+.inbod .inbd2 .more .mpic{
+    width: 20px;
+    margin-left: 10px;
+}
+.inbod .inbd2 .more .mpic img{
+    width: 100%;
+    transition: 0.5s;
+}
+.inbod .inbd2 .more:hover .mpic img{
+    transform: translateX(10px);
+}
+.inbod .inbd2 .in2rh .cont{
+    position: absolute;
+    top: 50%;
+    left: 16%;
+    transform: translateY(-50%);
+    writing-mode: vertical-rl;
+    color: #ffffff;
+    z-index: 3;
+    height: 70%;
+}
+.inbod .inbd2 .in2rh .cont .title{
+    font-size: 24px;
+    margin-left: 80px;
+    letter-spacing: 0.2em;
+}
+.inbod .inbd2 .in2rh .cont .ctext{
+    line-height: 2.2;
+    font-size: 18px;
+    padding-top: 70px;
+    height: auto;
+    width: 100%;
+}
+.inbod .inbd3{
+    background-color: #ffffff;
+    padding-top: 130px;
+    padding-bottom: 50px;
+}
+.inbod .inbd3 .title .i3hd{
+    position: relative;
+    writing-mode: vertical-rl;
+    font-size: 24px;
+    padding: 50px 15px;
+    margin: 0 auto;
+    letter-spacing: 0.6em;
+}
+
+#frame {/*----------图片轮播相框容器----------*/
+            position:relative; /*--绝对定位，方便子元素的定位*/
+            width: 2000px;
+            height: 800px;
+            overflow: hidden;/*--相框作用，只显示一个图片---*/
+            border-radius:5px;
+        }
+#photos img {
+            float: left;
+            width:2000px;
+            height:1000px;
+        }
+        #photos {/*---设置总的图片宽度--通过位移来达到轮播效果----*/
+            position: absolute;z-index:9px;
+            width: calc(2000px * 5);/*---修改图片数量的话需要修改下面的动画参数*/
+        }
+        .play{
+            animation: ma 10s ease-out infinite alternate;/**/
+        }
+        @keyframes ma {/*---每图片切换有两个阶段：位移切换和静置。中间的效果可以任意定制----*/
+            0%,20% {        margin-left: 0px;       }
+            25%,40% {       margin-left: -2000px;    }
+            45%,60% {       margin-left: -4000px;    }
+            65%,80% {       margin-left: -6000px;    }
+            85%,100% {      margin-left: -8000px;   }
+        }
+.inbod .inbd4{
+    background-color: black;
+    padding-top: 150px;
+}
+.inbod .inbd4 .title .i4hd{
+    position: relative;
+    writing-mode: vertical-rl;
+    font-size: 24px;
+    padding: 50px 15px;
+    margin: 0 auto;
+    color: #ffffff;
+    letter-spacing: 0.6em;
+}

@@ -1,0 +1,77 @@
+.header{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 6;
+}
+.header .indhe{
+    display: none;
+    padding: 0 46px;
+    padding-top: 37px;
+}
+.header .indhe .logo{
+    width: 236px;
+    cursor: pointer;
+}
+.header .nmhead{
+    position: relative;
+    height: 81px;
+    padding: 0 46px;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+.header .nmhead .logo{
+    width: 236px;
+    cursor: pointer;
+}
+.header .nmhead .logo img{
+    width: 100%;
+}
+.header .nmhead .search{
+    position: absolute;
+    right: 46px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.header .nmhead .search img{
+    width: 40%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+}
+.header .nmhead .nvb{
+    position: relative;
+    margin-right: 100px;
+    height: 100%;
+    transition: 0.5s;
+}
+.header .nmhead .nvb .nvitm{
+    margin-right: 110px;
+    position: relative;
+    color: #517ed9;
+    font-size: 18px;
+}
+.header .nmhead .nvb a:last-child .nvitm{
+    margin-right: 0;
+}
+.header .nmhead .nvb .nvitm::after{
+    content: " ";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50% , 10px);
+    height: 1px;
+    width: 0;
+    background-color: #517ed9;
+    transition: 0.3s;
+}
+.header .nmhead .nvb .nvitm:hover:after,
+.header .nmhead .nvb .nvitm.active::after{
+    width: 100%;
+}

@@ -1,0 +1,72 @@
+body{
+    padding-top: 80px;
+}
+a{
+    color: white;
+}
+.hpic img{
+    width: 100%;
+    height: 450px;
+}
+.titln{
+    font-size: 18px;
+    writing-mode: vertical-lr;
+    margin-top: 140px;
+    margin-bottom: 50px;
+    letter-spacing: 0.3em;
+}
+.about .abo1{
+    padding-bottom: 120px;
+}
+.about .abo1 .a1con{
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.1em;
+}
+.about .abo4 .a4b .a4itm,
+.about .abo2 .a2b .a2itm{
+    position: relative;
+    padding-left: 30px;
+    height: 70px;
+    font-size: 18px;
+}
+.about .abo4 .a4b .a4itm.grcl,
+.about .abo2 .a2b .a2itm.grcl{
+    background-color: #e4e9ef;
+}
+.about .abo4 .a4b .a4itm .name,
+.about .abo2 .a2b .a2itm .name{
+    width: 170px;
+}
+.about .abo4 .a4b .a4itm::after,
+.about .abo2 .a2b .a2itm::after{
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 2px;
+    width: 15px;
+    background-color: #999999;
+}
+.about .abo4 .a4b .a2pcbx,
+.about .abo2 .a2b .a2pcbx{
+    height: 200px;
+    margin-top: 60px;
+}
+.about .abo4 .a4b .a2pcbx .a2pc,
+.about .abo2 .a2b .a2pcbx .a2pc{
+    width: calc((100% - 30px)/4);
+    margin-right: 10px;
+    position: relative;
+}
+.about .abo4 .a4b .a2pcbx .a2pc:last-child，
+.about .abo2 .a2b .a2pcbx .a2pc:last-child{
+    margin-right: 0;
+}
+.about .abo4 .a4b .a2pcbx .a2pc img,
+.about .abo2 .a2b .a2pcbx .a2pc img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

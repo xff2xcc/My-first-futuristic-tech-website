@@ -1,0 +1,299 @@
+body{
+    padding-top: 80px;
+}
+.hpic img{
+    width: 100%;
+    height: 500px;
+}
+.proti{
+    padding-top: 178px;
+    padding-bottom: 96px;
+}
+.proti .title{
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 96px;
+    letter-spacing: 0.3em;
+}
+.proti .conte{
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 45px;
+}
+.proti .swtbox .swtm{
+    position: relative;
+    width: 172px;
+    line-height: 2.8em;
+    text-align: center;
+    border: 1px solid #a9adb5;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: 0.7s;
+}
+.proti .swtbox .swtm:last-child{
+    margin-right: 0;
+}
+.proti .swtbox .swtm:hover{
+    color: #ffffff;
+}
+.proti .swtbox .swtm::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+    background: #517ed9;
+}
+.proti .swtbox .swtm:hover:after{
+    transform: scaleY(1);
+    transform-origin: top;
+}
+.proti .swtbox .swtm .pic{
+    position: absolute;
+    top: 50%;
+    left: 17px;
+    width: 12px;
+    transform: translateY(-50%);
+    z-index: 3;
+}
+.proti .swtbox .swtm .pic img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    width: 100%;
+    transition: 0.7s;
+}
+.proti .swtbox .swtm:hover .pic img:first-child,
+.proti .swtbox .swtm .pic img:last-child{
+    opacity: 0;
+}
+.proti .swtbox .swtm:hover .pic img:last-child{
+    opacity: 1;
+}
+.proti .swtbox .swtm .stex{
+    position: relative;
+    z-index: 2;
+}
+/*以下都是css动画特效部分*/
+
+
+
+/***********************************************************************************/
+figure { 
+  margin: 0;
+  width: 100%;
+  height: 29.5vw;
+  background: url("66/winter-hat.jpg");
+    background-size: 100%; 
+    transform-origin: center bottom;
+    transform-style: preserve-3d;
+    transition: 1s transform;
+ }
+ figure figcaption { 
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+        url("66/winter-hat.jpg");
+    background-size: 100%; height: 50px;
+    background-repeat: no-repeat;
+  background-position: bottom;
+  color: #fff; 
+    position: relative; top: 29.5vw;
+    transform-origin: center top;
+    transform: rotateX(-89.9deg);
+    font-size: 1.2vw;
+  font-family: Montserrat, Arial, sans-serif;
+  text-align: center;
+    line-height: 3;
+}
+figure:before {
+  content: '';
+  position: absolute; top: 0; left: 0;
+  width: 100%; height: 100%;
+    box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.1), inset 0 0 250px 250px rgba(0, 0, 0, 0.1);
+    transition: 1s;
+    transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+    transform-origin: inherit;
+}
+div:hover figure { 
+  transform: rotateX(75deg) translateZ(5vw); 
+}
+div:hover figure:before {
+    box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5), inset 0 0 250px 250px rgba(0, 0, 0, 0.5);
+    transform: rotateX(-5deg) translateZ(-80px) scale(1);
+    }
+#gallery{
+  width:100%;
+  text-align:center;
+  perspective:1000;
+  margin-top:20px;
+  background:#e0e0e0;
+}
+
+.container {
+  width: 400px;
+  height: 400px;
+  display:inline-block;
+  margin:0 10px;
+}
+
+.sub_container {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transform: rotateY(180deg);
+  transition: all 1s;
+}
+
+.face {
+  position: absolute;
+  width: 100%;
+  height: 33.3%;
+  backface-visibility: hidden;
+  overflow:hidden;
+}
+
+.front img{
+  width: 100%;
+  height: 300%;
+}
+
+.back {
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+  text-align: center;
+  background:#ffffff;
+}
+
+.top{
+  top:0;
+  transform-origin:bottom;
+  transition:all 1s;
+}
+
+.front.top{
+  transform: rotateX(-180deg);
+}
+
+.back.top{
+  transform: rotateY(180deg) rotateX(180deg);
+}
+
+.middle{
+  top:33.3%;
+  transform-origin:top;
+  transition: all 1s;
+}
+
+.front.middle{
+  transform: rotateX(0deg);
+}
+
+.back.middle{
+  transform: rotateY(180deg) rotateX(0deg);
+}
+
+.bottom{
+  top:66.6%;
+  transform-origin:top;
+  transition: all 1s 0.25s;
+}
+
+.front.bottom{
+  transform: rotateX(179deg);/* 180deg value bug in firefox */
+}
+
+.back.bottom{
+  transform: rotateY(180deg) rotateX(-180deg);
+}
+
+.top img{
+  margin-top:0;
+}
+
+.middle img{
+  margin-top:-33.3%;
+}
+
+.bottom img{
+  margin-top:-66.6%;
+}
+
+.container:hover .front.face{
+  transform: rotateX(0deg);
+}
+
+.container:hover .back.face{
+  transform: rotateY(180deg) rotateX(0deg);
+}
+
+.container:hover .sub_container{
+  transform: rotateY(0deg) rotateX(0deg);
+}
+
+.label{
+  height:33%;
+  width:100%;
+  color:#ffffff;
+  line-height:2.5em;
+}
+
+.container:nth-child(1){
+  transform-origin:right;
+  transform:rotateY(-35deg);
+}
+
+.container:nth-child(1) .label{
+  background:#005eff;
+}
+
+.container:nth-child(2) .label{
+  background:#ff9921;
+}
+
+.container:nth-child(3) .label{
+  background:#31dd96;
+}
+
+.container:nth-child(3){
+  transform-origin:left;
+  transform:rotateY(35deg);
+}
+.lanren{width:1000px;overflow:hidden;margin:0 auto;}
+    .flip-3d { 
+      perspective: 1200px; width: 33%; float: left;  
+    }
+    .flip-3d figure { 
+      position: relative; 
+      transform-style: preserve-3d; 
+      transition: 1s transform;
+      font-size: 1.6rem;
+      margin:25px;
+    }
+    .flip-3d figure img { 
+      width: 100%; height: auto; 
+    }
+    .flip-3d figure figcaption { 
+      position: absolute; 
+      width: 100%; height: 100%; top: 0; 
+      transform: rotateY(.5turn) translateZ(1px); 
+      background: rgba(255,255,255,0.9); 
+      text-align: center; 
+      padding-top: 45%; 
+      opacity: 0.6; 
+      transition: 1s .5s opacity; 
+    }
+    .flip-3d:hover figure { transform: rotateY(.5turn); }
+    .flip-3d:hover figure figcaption { opacity: 1; }
+    .flip-3d figure:after { 
+      content: " "; display: block;
+      height: 8vw; width: 100%; 
+      transform: rotateX(90deg); 
+      background-image:radial-gradient(ellipse closest-side, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%); 
+    }
+    
